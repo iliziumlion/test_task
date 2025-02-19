@@ -17,7 +17,7 @@ class Order extends Model
     /**
      * @return string|null
      */
-    public function getManagerFullNameAttribute()
+    public function getManagerFullNameAttribute(): ?string
     {
         return $this->manager
             ? $this->manager->firstName . ' ' . $this->manager->lastName
