@@ -1,0 +1,15 @@
+{
+    "name": "ilizium/httpd",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DevTask\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ilizium"
+        }
+    ],
+    "require": {}
+}
