@@ -7,12 +7,6 @@ use DevTask\TaskOne\Test;
 
 echo "<h2>Task 1</h2>";
 
-/**
- * Разворачивает односвязный список.
- *
- * @param Test $head Первый узел списка.
- * @return Test|null Новый первый узел (бывший последний).
- */
 function reverse(Test $head): ?Test {
     $prev = null;
     $current = $head;
