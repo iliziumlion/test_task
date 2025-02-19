@@ -78,4 +78,3 @@ public function getResult(array $boxes, int $weight): int
     // какой-то код
 }
 ```
-# test_task
