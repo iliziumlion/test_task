@@ -4,6 +4,11 @@ namespace DevTask\TaskThree;
 
 class Delivery
 {
+    /**
+     * @param  array  $boxes
+     * @param  int  $weight
+     * @return int
+     */
     public function getResult(array $boxes, int $weight): int
     {
         // Подсчёт частот каждого веса

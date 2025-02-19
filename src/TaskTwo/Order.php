@@ -5,13 +5,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
+    /**
+     * @return BelongsTo
+     */
     public function manager(): BelongsTo
     {
         return $this->belongsTo('App\Manager');
     }
 
     // Accessor для вывода полного имени менеджера
-
     /**
      * @return string|null
      */
