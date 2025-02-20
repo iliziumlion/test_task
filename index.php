@@ -5,6 +5,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use DevTask\TaskOne\Test;
 use DevTask\TaskOne\LinkedListReverser;
+use DevTask\TaskThree\Delivery;
 
 // =====================================================================================================================
 echo "<h2>Task 1</h2>";
@@ -26,12 +27,11 @@ echo '</pre>';
 
 echo "<h2>Task 3</h2>";
 
-use DevTask\TaskThree\Delivery;
-/*$boxes = [1, 2, 1, 5, 1, 3, 5, 2, 5, 5];
-$weight = 6;*/
+$boxes = [1, 2, 1, 5, 1, 3, 5, 2, 5, 5];
+$weight = 6;
 
-$boxes = [2,4,3,6,1];
-$weight = 5;
+/*$boxes = [2,4,3,6,1];
+$weight = 5;*/
 
 echo (new Delivery)->getResult($boxes, $weight);
 
