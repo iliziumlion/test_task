@@ -4,24 +4,11 @@ declare(strict_types=1);
 require_once __DIR__ . '/vendor/autoload.php';
 
 use DevTask\TaskOne\Test;
+use DevTask\TaskOne\LinkedListReverser;
 
+// =====================================================================================================================
 echo "<h2>Task 1</h2>";
 
-function reverse(Test $head): ?Test {
-    $prev = null;
-    $current = $head;
-
-    while ($current !== null) {
-        $next = $current->next;
-        $current->next = $prev;
-        $prev = $current;
-        $current = $next;
-    }
-
-    return $prev;
-}
-
-// Пример использования:
 $a = new Test();
 $b = new Test();
 $c = new Test();
@@ -30,10 +17,12 @@ $a->next = $b;
 $b->next = $c;
 $c->next = null;
 
-$ob1 = reverse($a);
+$ob1 = LinkedListReverser::reverse($a);
 echo '<pre>';
     var_dump($ob1);
 echo '</pre>';
+
+// =====================================================================================================================
 
 echo "<h2>Task 3</h2>";
 

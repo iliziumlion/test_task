@@ -1,5 +1,4 @@
 <?php
-
 namespace DevTask\TaskThree;
 
 class Delivery

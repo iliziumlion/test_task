@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace DevTask\TaskTwo;
 use Illuminate\Database\Eloquent\Model;
