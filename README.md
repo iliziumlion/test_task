@@ -1,6 +1,7 @@
 # Test task
 ## Задача №1
 - /src/TaskOne/Test.php 
+- /src/TaskOne/LinkedListReverser.php
 - /index.php
 
 ## Задача №2
@@ -78,3 +79,4 @@ public function getResult(array $boxes, int $weight): int
     // какой-то код
 }
 ```
+
